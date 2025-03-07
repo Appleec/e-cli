@@ -1,7 +1,7 @@
 {
   "name": "@elinzy/e-cli",
   "version": "0.1.0",
-  "description": "e-cli",
+  "description": "Command Line Tools",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup"
@@ -33,18 +33,31 @@
     "dist"
   ],
   "devDependencies": {
+    "@configurajs/eslint": "^0.1.2",
+    "@configurajs/prettier": "^0.1.4",
     "@types/conventional-changelog": "^6.0.0",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.13.9",
+    "@types/semver": "^7.5.8",
     "ansis": "^3.17.0",
-    "commander": "^13.1.0",
+    "eslint": "^9.21.0",
+    "prettier": "^3.5.3",
     "semver": "^7.7.1",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2"
   },
   "dependencies": {
+    "commander": "^13.1.0",
     "conventional-changelog": "^6.0.0",
     "fs-extra": "^11.3.0",
     "nanospinner": "^1.2.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Appleec/e-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Appleec/e-cli/issues"
+  },
+  "homepage": "https://github.com/Appleec/e-cli#readme"
 }
