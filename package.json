@@ -1,0 +1,50 @@
+{
+  "name": "@elinzy/e-cli",
+  "version": "0.1.0",
+  "description": "e-cli",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup"
+  },
+  "keywords": [
+    "e",
+    "cli",
+    "e-cli",
+    "linzy",
+    "elinzy"
+  ],
+  "author": "Appleec <771992522@qq.com>",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "e": "bin/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/conventional-changelog": "^6.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.13.9",
+    "ansis": "^3.17.0",
+    "commander": "^13.1.0",
+    "semver": "^7.7.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "conventional-changelog": "^6.0.0",
+    "fs-extra": "^11.3.0",
+    "nanospinner": "^1.2.2"
+  }
+}
